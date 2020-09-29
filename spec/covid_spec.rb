@@ -115,3 +115,26 @@ def ask_amount()
 		
 	return amount
 end
+
+def ask_order()
+	
+	puts " "
+	puts "What would you like to order? Or type 'quit' if you want to risk getting eaten by zombies."
+	str = ""
+	$item_names.each_value{|v| str+= "[#{v[0]}]#{v[1..v.length]}, " if v != "Quit"}
+	puts str.delete_suffix(', ')
+	print "Input: "; order = gets.strip.downcase[0]
+
+	# user validate the response, if it is not a valid option, ask them again
+	unless order == "f" || order == "s" || order == "h" || order == "c" || order == "a" || $item_names.key?(order)
+		puts "Sorry that is not a valid order. Please try again."
+		sleep 1
+		system "clear"
+		print_intro()
+		print_order($order_hash)
+		ask_order()
+	end	
+	
+	return order
+end
+
