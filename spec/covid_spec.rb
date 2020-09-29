@@ -61,4 +61,32 @@ def print_order(order_hash)
 	return
 end
 
-        
+def get_order()
+
+	system "clear"
+
+	print_intro()
+	print_order($order_hash)
+	
+	quit = false
+	until quit
+
+		
+		order = ask_order()
+		# exit out of app if user wants to quit
+		return quit = true if order == "q"
+		
+		# if they don't want to quit, ask them how much they want to order
+		amount = ask_amount()
+		puts amount
+		# add order to the main has
+		$order_hash.key?(order) ? $order_hash[order] += amount : $order_hash[order] = amount
+		
+	
+		system "clear"
+		print_intro()
+		print_order($order_hash)
+		
+		quit = follow_up()
+	end
+	
