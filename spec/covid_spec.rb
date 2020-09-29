@@ -100,3 +100,18 @@ def get_order()
 			
 end
   
+def ask_amount()
+	
+	puts " "
+	puts "How many would you like to order?"
+	print "Input: "; amount = gets.strip.to_i
+	puts " "
+
+	if amount == 0 || Integer(amount) == nil
+		puts "No funny business, that is an invalid entry."
+		sleep 1
+		ask_amount()
+	end
+		
+	return amount
+end
