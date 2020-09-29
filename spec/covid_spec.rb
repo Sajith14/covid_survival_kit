@@ -29,3 +29,36 @@ def main()
   system "clear"
 end
 
+def print_options()
+    # wrote the code to print the menu options for the customer to choose from.
+	puts "*"*100
+	puts " "
+	puts "Covid-19 Survival Kit:"
+	$item_names.map do |k,v| 
+		next if v == 'Quit'
+		puts "Item: #{v} 		Price: $#{$cost_price[k]}"
+	end
+	puts "*"*100
+end 
+
+def print_order(order_hash)
+	puts " "
+	puts "Your current order:"
+	
+	if $order_hash.empty?
+		puts "You currently have nothing in your order."
+	else
+		$order_hash.map do |k,v| 
+			puts "x #{v}	#{$item_names[k]} 	= $#{v * $cost_price[k]}"
+		end
+	end
+	
+	puts " "
+	puts "	Total Bill: $#{calculate_total_bill($order_hash)}"
+	
+	puts "*"*42
+	
+	return
+end
+
+        
