@@ -90,3 +90,13 @@ def get_order()
 		quit = follow_up()
 	end
 	
+	system "clear"
+	print_order($order_hash)
+	puts " "
+	puts "Thank you for purchasing your Covid-19 Survival Kit!"
+	puts "Type [Q]uit to begin your hunting."
+	print "Input: "; exit = gets.strip.downcase[0]
+	exit == "q" ? (return true) : (return false)
+			
+end
+  
