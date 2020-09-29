@@ -138,3 +138,21 @@ def ask_order()
 	return order
 end
 
+def user_option()
+	puts " "
+	puts "What would you like to do?"
+	puts " "
+	puts "[F]ight back"
+	puts "[R]un away and cry"
+	
+	print "Input: "; resp = gets.strip.downcase[0]
+	puts resp
+	
+	unless resp == "f" || resp == "r"
+		puts "Invalid entry. Starting again."
+		sleep 2
+		main()
+	end
+	
+	return resp
+end
