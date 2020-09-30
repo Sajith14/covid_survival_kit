@@ -156,3 +156,21 @@ def user_option()
 	
 	return resp
 end
+
+def follow_up()
+	puts "[C]ontinue to order?"
+	puts "[F]inished ordering?"
+
+	print "Input: "; resp = gets.strip.downcase[0]
+	
+	if resp == 'c'
+		print_intro()
+		print_order($order_hash)
+		return
+	elsif resp == 'f'
+		return true
+	else
+		puts "Sorry that is not a valid response."
+		follow_up()
+	end
+end
