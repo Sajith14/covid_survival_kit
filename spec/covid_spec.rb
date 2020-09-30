@@ -174,3 +174,30 @@ def follow_up()
 		follow_up()
 	end
 end
+
+def print_intro()
+	system "clear"
+	puts "
+	Our Earth has been taken over by a highly contagious virus known as Covid-19 and is 
+	spreading quick all over the world. This dangerous virus is known to eating the insides 
+	of your organs causing you to turn into a blood sucking zombie. For your own survival 
+	please purchase from our Covid-19 Survival Kit to help stop the disease and your 
+	only chance of staying alive.
+	"
+	puts " "
+	print_options()
+end
+
+def confirm_quit()
+	
+	system "clear"
+	puts "Are you sure you want to risk getting eaten alive?"
+	puts "(Y)es I want to sign my own death wish / (N)o I want to kick some ass"
+	print "Input: "; ans = gets.strip.downcase[0]
+	
+	ans == 'y' ? (return true) : (return false)
+	
+end
+
+
+main()
