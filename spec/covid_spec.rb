@@ -110,8 +110,6 @@ def get_order()
 	print "Input: ".colorize(:green); exit = gets.strip.downcase[0]
 	exit == "q" ? (return true) : (return false)
     
-    pid = fork{ system 'killall', 'afplay' }
-    
 end
 
 
