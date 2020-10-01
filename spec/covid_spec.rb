@@ -7,6 +7,8 @@
 
 require 'colorize'
 
+pid = fork{ exec 'afplay', "scary.mp3" }
+
 $cost_price = {"f" => 10, "s" => 20, "h" => 200, "c" => 80, "a" => 500}
 $item_names = {"f"=> "Face Mask", "s"=> "Sanitiser", "h"=> "Hazmat Suit", "c"=> "Combat Boots", "a"=> "Assault Rifle", "q"=> "Quit"}
 $order_hash = {}
@@ -97,7 +99,9 @@ def get_order()
 		
 		quit = follow_up()
 	end
-	
+    
+    pid = fork{ exec 'afplay', "scream.mp3" }
+
 	system "clear"
 	print_order($order_hash)
 	puts " "
@@ -105,7 +109,9 @@ def get_order()
 	puts "Type".colorize(:green) + " [Q]uit".colorize(:red) + " to begin your".colorize(:green) + " hunting.".colorize(:red)
 	print "Input: ".colorize(:green); exit = gets.strip.downcase[0]
 	exit == "q" ? (return true) : (return false)
-			
+    
+    pid = fork{ system 'killall', 'afplay' }
+    
 end
 
 
