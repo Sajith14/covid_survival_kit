@@ -7,7 +7,7 @@
 
 require 'colorize'
 
-# pid = fork{ exec 'afplay', "scary.mp3" }
+pid = fork{ exec 'afplay', "scary.mp3" }
 
 $cost_price = {"f" => 10, "s" => 20, "h" => 200, "c" => 80, "a" => 500}
 $item_names = {"f"=> "Face Mask", "s"=> "Sanitiser", "h"=> "Hazmat Suit", "c"=> "Combat Boots", "a"=> "Assault Rifle", "q"=> "Quit"}
@@ -106,11 +106,38 @@ def get_order()
 	system "clear"
 	print_order($order_hash)
 	puts " "
-	puts "Thank you for purchasing your Covid-19 Survival Kit!".colorize(:green)
+    puts "Thank you for purchasing your Covid-19 Survival Kit!".colorize(:green)
+    puts " "
+    puts " 
+@@@@@                                          @@@@@
+@@@@@@@                                      @@@@@@@
+@@@@@@@           @@@@@@@@@@@@@@@            @@@@@@@
+ @@@@@@@@       @@@@@@@@@@@@@@@@@@@        @@@@@@@@
+     @@@@@     @@@@@@@@@@@@@@@@@@@@@     @@@@@
+       @@@@@  @@@@@@@@@@@@@@@@@@@@@@@  @@@@@
+         @@  @@@@@@@@@@@@@@@@@@@@@@@@@  @@
+            @@@@@@@    @@@@@@    @@@@@@
+            @@@@@@      @@@@      @@@@@
+            @@@@@@      @@@@      @@@@@
+             @@@@@@    @@@@@@    @@@@@
+              @@@@@@@@@@@  @@@@@@@@@@
+               @@@@@@@@@@  @@@@@@@@@
+           @@   @@@@@@@@@@@@@@@@@   @@
+           @@@@  @@@@ @ @ @ @ @@@@  @@@@
+          @@@@@   @@@ @ @ @ @ @@@   @@@@@
+        @@@@@      @@@@@@@@@@@@@      @@@@@
+      @@@@          @@@@@@@@@@@          @@@@
+   @@@@@              @@@@@@@              @@@@@
+  @@@@@@@                                 @@@@@@@
+   @@@@@                                   @@@@@
+   ".colorize(:red)
+
+
+
+    puts " "
 	puts "Type".colorize(:green) + " [Q]uit".colorize(:red) + " to begin your".colorize(:green) + " hunting.".colorize(:red)
-	print "Input: ".colorize(:green); exit = gets.strip.downcase[0]
-	exit == "q" ? (return true) : (return false)
-    
+    print "Input: ".colorize(:green); exit = gets.strip.downcase[0]
+    exit == "q" ? (return true) : (return false)
 end
 
 
@@ -239,7 +266,7 @@ def print_intro()
 	spreading quick all over the world. This dangerous virus is known to eating the insides 
 	of your organs causing you to turn into a blood sucking zombie. For your own survival 
 	please purchase from our Covid-19 Survival Kit to help stop the disease and your 
-	only chance of staying alive.".colorize(:red)
+	only chance of staying alive".colorize(:red) + " \u{1F6B7}.".colorize(:red)
 	puts " "
 	print_options()
 end
