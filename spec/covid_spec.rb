@@ -7,7 +7,7 @@
 
 require 'colorize'
 
-pid = fork{ exec 'afplay', "scary.mp3" }
+# pid = fork{ exec 'afplay', "scary.mp3" }
 
 $cost_price = {"f" => 10, "s" => 20, "h" => 200, "c" => 80, "a" => 500}
 $item_names = {"f"=> "Face Mask", "s"=> "Sanitiser", "h"=> "Hazmat Suit", "c"=> "Combat Boots", "a"=> "Assault Rifle", "q"=> "Quit"}
@@ -42,7 +42,8 @@ def print_options()
 	$item_names.map do |k,v| 
 		next if v == 'Quit'
 		puts "Item: #{v} 		Price: $#{$cost_price[k]}".colorize(:green)
-	end
+    end
+    puts " "
 	puts "*".colorize(:green)*100
 end
 
@@ -179,9 +180,8 @@ def user_option()
 	puts " "
 	puts "What would you like to do?".colorize(:green)
 	puts " "
-	puts "[F]ight back".colorize(:green)
-	puts "[R]un away and cry".colorize(:green)
-	
+	puts "[F]ight back".colorize(:green) + " \u{1F52B}"
+    puts "[R]un away and cry".colorize(:green) + " \u{1F62D}"
 	print "Input: ".colorize(:green); resp = gets.strip.downcase[0]
 	puts resp
 	
@@ -239,8 +239,7 @@ def print_intro()
 	spreading quick all over the world. This dangerous virus is known to eating the insides 
 	of your organs causing you to turn into a blood sucking zombie. For your own survival 
 	please purchase from our Covid-19 Survival Kit to help stop the disease and your 
-	only chance of staying alive.
-	".colorize(:red)
+	only chance of staying alive.".colorize(:red)
 	puts " "
 	print_options()
 end
