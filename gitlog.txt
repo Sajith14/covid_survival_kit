@@ -1,0 +1,101 @@
+commit a30443556a6626353dd245644333a82a3d3a1fa3
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Fri Oct 2 17:29:04 2020 +1000
+
+    ascii art added to exit page
+
+commit 6366f5a86b8f1ec2f869cc574d8192c6704a7a1b
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Fri Oct 2 15:11:32 2020 +1000
+
+    emoji icons added to main menu
+
+commit 01701c8a08c93dc3219144bdf2664e86db463188
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Fri Oct 2 00:49:48 2020 +1000
+
+    commit update
+
+commit a8e8981d1ac039977856c192266ba04569fc05f1
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Fri Oct 2 00:47:03 2020 +1000
+
+    colorize and music clip added
+
+commit f6a17cddc1d72cfff53d6b863412e677b3933ba2
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Thu Oct 1 16:07:43 2020 +1000
+
+    music clipped added to application
+
+commit 34cec090191cfc74f26fcdd69c36083e1aef41c0
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Thu Oct 1 14:06:56 2020 +1000
+
+    colorize gem has been used to customise app
+
+commit 1aa41bc1eeaeeef5ce1bf8c749a0f091f28efe6a
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Wed Sep 30 12:51:32 2020 +1000
+
+    opening message added along with app exit function
+
+commit 2dde85dd4d3003ee27748e8af170bcfb5b4970eb
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Wed Sep 30 11:52:58 2020 +1000
+
+    follow up prompt added
+
+commit 2d22271a61940ae523b7f4a31c4e97be426da8b6
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Wed Sep 30 07:15:02 2020 +1000
+
+    main menu page prompts user to add input
+
+commit 06db99703dba6320a40cb3e9a62256cf651634cb
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 21:55:49 2020 +1000
+
+    prompt user to choose VALID item otherwise will ask them again
+
+commit acc1c27e545e6befceceb3f7fdb114e93047e362
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 20:43:46 2020 +1000
+
+    prompts user to add quantity of items
+
+commit 45b39f48d1aea72f37eb014828b0120607ffa87e
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 20:06:26 2020 +1000
+
+    exit  app  option added
+
+commit fece8a23f825004f2aa405f3047147d210c92502
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 19:44:26 2020 +1000
+
+    code for menu items and price has been added
+
+commit 718367ece4c4f507044833280d4616c05c26e91c
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 18:47:26 2020 +1000
+
+    print order added
+
+commit ed10a6cb679a7ee7db63eaddacc9b01c887cd38e
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 15:43:12 2020 +1000
+
+    second commit
+
+commit 6ba80277a9af91926cc805344e4dfed1420fec83
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 14:52:27 2020 +1000
+
+    first commit
+
+commit a554ab221a67aa9e931c1f3d7f6393958cc45176
+Author: Sajith <sajith.hewagama@gmail.com>
+Date:   Tue Sep 29 14:36:33 2020 +1000
+
+    initial commit
