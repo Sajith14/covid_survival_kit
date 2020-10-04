@@ -7,14 +7,14 @@
 
 require 'colorize'
 
-pid = fork{ exec 'afplay', "scary.mp3" }
+ pid = fork{ exec 'afplay', "scary.mp3" } #(feature 1)
 
 $cost_price = {"f" => 10, "s" => 20, "h" => 200, "c" => 80, "a" => 500}
 $item_names = {"f"=> "Face Mask", "s"=> "Sanitiser", "h"=> "Hazmat Suit", "c"=> "Combat Boots", "a"=> "Assault Rifle", "q"=> "Quit"}
 $order_hash = {}
 
 
-def main()
+def main() 
     # puts "Here is your total bill : #{calculate_total_bill(get_order)}"
 	
 	quit = false
@@ -34,7 +34,7 @@ def main()
 end
 
 
-def print_options()
+def print_options() #(feature 2)
     # wrote the code to print the menu options for the customer to choose from.
 	puts "*".colorize(:green)*100
 	puts " "
@@ -49,7 +49,7 @@ end
 
 
 
-def print_order(order_hash)
+def print_order(order_hash) #(feature 3)
 	puts " "
 	puts "Your current order:".colorize(:green)
 	
@@ -83,7 +83,7 @@ def get_order()
 	until quit
 
 		
-		order = ask_order()
+		order = ask_order() #(feature 4)
 		# exit out of app if user wants to quit
 		return quit = true if order == "q"
 		
